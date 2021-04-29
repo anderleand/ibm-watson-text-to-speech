@@ -1,0 +1,89 @@
+body{
+    background-color: #F5F5F5;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.container{
+    box-sizing: border-box;
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.comentario{
+    box-sizing: border-box;
+    min-width: 50%;
+    min-height: 20.6875rem;
+}
+
+.textarea-comentario{
+    box-sizing: border-box;
+    display: block;
+    
+    width: 28.625rem;
+    height: 13rem;
+
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.botao{
+    border-radius: .25rem;
+}
+
+.botao-cadastrar{
+    display: block;
+    margin: 1rem auto;
+    width: 28.625rem;
+
+    height: 2.5rem;
+    font-size: 1.5rem;
+    
+}
+
+.botao-ouvir{
+    width: 5rem;
+    height: 2rem;
+    font-size: .875rem;
+}
+
+ .linha-vertical{
+    border-left: .125rem solid;
+    border-color: #C4C4C4;
+}
+
+.comentarios{
+
+    min-width: 50%;
+    min-height: 20.6875rem;
+    
+    display: inline-block;
+    margin: 0 auto;
+
+}
+
+.ouvir-comentario{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    width: 28.625rem;
+    height: 6rem;
+}
+
+.comentarios-texto{
+    width: 21.4375rem;
+    height: 5rem;
+    display: inline-flex;
+    align-items: center;
+
+
+    white-space:pre-wrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
