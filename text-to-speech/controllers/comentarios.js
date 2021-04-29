@@ -1,18 +1,24 @@
+const Comentario = require('../models/Comentario');
+
 module.exports = app => {
 
     app.get('/', (req, res) => {
-        res.send('Você está na rota onde será listado os comentários utilizando GET')
-        console.log('Lista comentários - GET')
+        Comentario.lista(res)
+        console.log('GET comentario');
     });
 
-    app.post('/salvarcomentario', (req, res) => {
-        res.send('Você está na rota "salvarcomentario" utilizando  POST')
-        console.log('Salvarcomentario - POST')
+    app.post('/', (req, res) => {
+        const comentario = req.body;
+        Comentario.adiciona(comentario, res);
+
+        console.log('POST comentario');
     });
 
-    app.get('/ouvircomentario', (req, res) => {
-        res.send('Você está na rota "ouvircomentario" utilizando GET')
-        console.log('Ouvircomentario - GET')
+    app.get('/:id', (req, res) => {
+        const id = parseInt(req.params.id);
+        Comentario.buscaPorId(id, res);
+
+        console.log(`GET ouvircomentario ${id}`);
     });
 
 }
