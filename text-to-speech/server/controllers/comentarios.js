@@ -4,7 +4,7 @@ module.exports = app => {
 
     app.get('/', (req, res) => {
         Comentario.lista(res)
-        console.log('GET comentario');
+        console.log('GET comentarios');
     });
 
     app.post('/', (req, res) => {
