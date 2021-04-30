@@ -5,7 +5,7 @@ class Tabelas {
     }
 
     criaTabela() {
-        const sql = 'CREATE TABLE IF NOT EXISTS comentarios (id int NOT NULL AUTO_INCREMENT, comentario varchar(140) NOT NULL, PRIMARY KEY(id))';
+        const sql = 'CREATE TABLE IF NOT EXISTS comentarios (id int NOT NULL AUTO_INCREMENT, comentario varchar(250) NOT NULL, PRIMARY KEY(id))';
 
         this.conexao.query(sql, erro => {
             if (erro) {
