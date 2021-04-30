@@ -4,7 +4,8 @@ module.exports = app => {
 
     app.get('/', (req, res) => {
         Comentario.lista(res)
-        console.log('GET comentarios');
+
+        console.log('GET lista comentarios');
     });
 
     app.post('/', (req, res) => {
@@ -18,7 +19,7 @@ module.exports = app => {
         const id = parseInt(req.params.id);
         Comentario.buscaPorId(id, res);
 
-        console.log(`GET ouvircomentario ${id}`);
+        console.log(`GET ouvir comentario ${id}`);
     });
 
 }
