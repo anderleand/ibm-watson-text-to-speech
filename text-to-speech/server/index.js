@@ -14,4 +14,4 @@ conexao.connect(erro => {
 Tabelas.init(conexao);
 const app = express();
 
-app.listen(3000, () => console.log('Servidor OK'));
+app.listen(3000, () => console.log('Servidor rodando na porta 3000'));
